@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KPB Farm - Order </title>
+    <link rel="stylesheet" href="test.css" />
+    <script
+      src="https://kit.fontawesome.com/630bc57373.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <img src="Pictures/KPB_KPB V1.png" class="logo" alt="" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="#footer">Contact</a></li>
+        <li>
+          <div class="cart-icon" id="cartIcon">
+            <img src="Pictures/shopping-cart-outline-svgrepo-com.svg" alt="Cart" />
+            <div class="quantity" id="cartQuantity">0</div>
+          </div>
+        </li>
+      </ul>
+      </nav>
+
+      <div class="ground_provision"> 
+        <h1>Ground Provision</h1>
+        <div class="green-banana" data-item="green-banana" data-price="200">
+          <img class="green-banana-picture" src="Pictures/green banana.png" alt="" />
+          <p>Green Banana</p>
+          <p class="price">1 Dozen for &#36;200</p>
+          <div class="quan">
+            <label for="greenBananaQty">Quantity:</label>
+            <input type="number" id="greenBananaQty" name="greenBananaQty" value="1" min="1" max="100">
+          </div>
+          <button class="food-produce_button" data-item="Green Banana" data-price="200" onclick="addToCart('greenBanana')">Add to Cart</button>
+        </div>
+        
+  
+      <div class="potato" data-item="Potato" data-price="150">
+        <img class="potato-picture" src="Pictures/sweet-potato.png" alt="" />
+        <p>Sweet Potato</p>
+        <p class="price">1 pound for &#36;200</p>
+        <div class="quan">
+            <label for="potatoQty">Quantity:</label>
+            <input type="number" id="potatoQty" name="potatoQty" value="1" min="1" max="100">
+          </div>
+          <button class="food-produce_button" data-item="Potato" data-price="200" onclick="addToCart('potato')">Add to Cart</button>
+      </div>
+     
+  
+      <div class="pumpkin" data-item="pumpkin" data-price="150">
+        <img class="pumpkin-picture" src="Pictures/pumpkin.png" alt="" />
+        <p>Pumpkin</p>
+        <p class="price"> 1 pound for &#36 150</p>
+        <div class="quan">
+          <label for="pumpkinQty">Quantity:</label>
+          <input type="number" id="pumpkinQty" name="pumpkinQty" value="1" min="1" max="100">
+        </div>
+        <button class="food-produce_button" data-item="Pumpkin" data-price="200" onclick="addToCart('pumpkin')">Add to Cart</button>
+      </div>
+  
+      <div class="yam" data-item="Yam" data-price="150">
+        <img class="yellow-yam-picture" src="Pictures/yellow-yam.png" alt="" />
+        <p>Yellow Yam</p>
+        <p class="price"> 1 pound for &#36 150</p>
+        <div class="quan">
+          <label for="yamQty">Quantity:</label>
+          <input type="number" id="yamQty" name="yamQty" value="1" min="1" max="100">
+        </div>
+        <button class="food-produce_button" data-item="Yam" data-price="200" onclick="addToCart('yam')">Add to Cart</button>      </div>
+  
+      <div class="irish" data-item="irish" data-price="200">
+        <img class="irish-picture" src="Pictures/irish.png" alt="" />
+        <p>Irish Potato</p>
+        <p class="price"> 1 pound for &#36 200</p>
+        <div class="quan">
+          <label for="irishQty">Quantity:</label>
+          <input type="number" id="irishQty" name="irishQty" value="1" min="1" max="100">
+        </div>
+        <button class="food-produce_button" data-item="Irish" data-price="200" onclick="addToCart('irish')">Add to Cart</button>      </div>   
+  
+      <div class="plantain" data-item="Plantain" data-price="120">
+        <img class="plantain-picture" src="Pictures/plantain.png" alt="" />
+        <p>Plantain</p>
+        <p class="price"> 1 finger of ripe plantain for &#36 120 
+          <br/> 
+          &#36 80 for 1 finger of green plantain</p>
+          <div class="quan">
+            <label for="plantainQty">Quantity:</label>
+            <input type="number" id="plantainQty" name="plantainQty" value="1" min="1" max="100">
+          </div>
+          <button class="food-produce_button" data-item="Plantain" data-price="200" onclick="addToCart('plantain')">Add to Cart</button>      </div>  
+  
+      <div class="okra">
+        <img class="okra-picture" src="Pictures/okra.jpg" alt="" />
+        <p>Okra</p>
+        <p class="price"> 1 pound for &#36 200</p>
+        <div class="quan">
+          <label for="okraQty">Quantity:</label>
+          <input type="number" id="okraQty" name="okraQty" value="1" min="1" max="100">
+        </div>
+        <button class="food-produce_button" data-item="Okra" data-price="200" onclick="addToCart('okra')">Add to Cart</button>      </div>    
+      
+      <div class="cucumber">
+        <img class="cucumber-picture" src="Pictures/cucumber.png" alt="" />
+        <p>Cucumber</p>
+        <p class="price"> 1 pound for &#36 60</p>
+        <div class="quan">
+          <label for="cucumberQty">Quantity:</label>
+          <input type="number" id="cucumberQty" name="cucumberQty" value="1" min="1" max="100">
+        </div>
+        <button class="food-produce_button" data-item="Cucumber" data-price="200" onclick="addToCart('cucumber')">Add to Cart</button>      </div> 
+    </div>
+  
+    <div class="fruits">
+      <h1>Fruits</h1>
+  
+      <div class="ripe-banana">
+        <img class="ripe-banana-picture" src="Pictures/ripebanana.png" alt="" />
+        <p>Ripe Banana</p>
+        <p class="price"> 1 dozen for &#36 300</p>
+        <div class="quan">
+          <label for="ripebananaQty">Quantity:</label>
+          <input type="number" id="ripebananaQty" name="ripebananaQty" value="1" min="1" max="100">
+        </div>
+        <button class="food-produce_button" data-item="Ripe Banana" data-price="200" onclick="addToCart('ripebanana')">Add to Cart</button>      </div>   
+  
+      <div class="melon" data-item="Watermelon" data-price="150">
+        <img class="melon-picture" src="Pictures/watermelon.png" alt="" />
+        <p>Watermelon</p>
+        <p class="price">1 pound for &#36 150</p>
+        <div class="quan">
+          <label for="melonQty">Quantity:</label>
+          <input type="number" id="melonQty" name="melonQty" value="1" min="1" max="100">
+        </div>
+        <button class="food-produce_button" data-item="Melon" data-price="200" onclick="addToCart('melon')">Add to Cart</button>      </div>  
+  
+      <div class="papaya">
+        <img class="papaya-picture" src="Pictures/papaya.png" alt="" />
+        <p>Papaya</p>
+        <p class="price"> 1 pound for &#36 150</p>
+        <div class="quan">
+          <label for="papayaQty">Quantity:</label>
+          <input type="number" id="papayaQty" name="papayaQty" value="1" min="1" max="100">
+        </div>
+        <button class="food-produce_button" data-item="Papaya" data-price="200" onclick="addToCart('papaya')">Add to Cart</button>      </div>    
+      
+      <div class="canteloupe">
+        <img class="canteloupe-picture" src="Pictures/canteloupe.png" alt="" />
+        <p>Canteloupe</p>
+        <p class="price"> 1 pound for &#36 200</p>
+        <div class="quan">
+          <label for="canteloupeQty">Quantity:</label>
+          <input type="number" id="canteloupeQty" name="canteloupeQty" value="1" min="1" max="100">
+        </div>
+        <button class="food-produce_button" data-item="Canteloupe" data-price="200" onclick="addToCart('canteloupe')">Add to Cart</button>      
+      </div> 
+    </div>
+    
+    <div class="seasoning">
+      <h1>Seasoning</h1>
+  
+    <div class="onion">
+      <img class="onion-picture" src="Pictures/onion.png" alt="" />
+      <p>Onion</p>
+      <p class="price"> 1 pound for &#36 300</p>
+      <div class="quan">
+        <label for="onionQty">Quantity:</label>
+        <input type="number" id="onionQty" name="onionQty" value="1" min="1" max="100">
+      </div>
+      <button class="food-produce_button" data-item="Onion" data-price="200" onclick="addToCart('Onion')">Add to Cart</button>    </div>
+  
+    <div class="peper">
+      <img class="pepper-picture" src="Pictures/scotch bonnet.webp" alt="" />
+      <p>Scotch Bonnet</p>
+      <p class="price"> 1 dozen for &#36 300</p>
+      <div class="quan">
+        <label for="peperQty">Quantity:</label>
+        <input type="number" id="peperQty" name="peperQty" value="1" min="1" max="100">
+      </div>
+      <button class="food-produce_button" data-item="Pepper" data-price="200" onclick="addToCart('peper')">Add to Cart</button>    </div>
+  
+    <div class="esc">
+      <img class="escallion-picture" src="Pictures/escallion.png" alt="" />
+      <p>scallion</p>
+      <p class="price"> 1 pound for &#36 200</p>
+      <div class="quan">
+        <label for="escQty">Quantity:</label>
+        <input type="number" id="escQty" name="escQty" value="1" min="1" max="100">
+      </div>
+      <button class="food-produce_button" data-item="Escallion" data-price="200" onclick="addToCart('esc')">Add to Cart</button>    </div>
+  
+    <div class="thyme">
+      <img class="thyme-picture" src="Pictures/thyme.png" alt="" />
+      <p>thyme</p>
+      <p class="price"> 1 pound for &#36 1000</p>
+      <div class="quan">
+        <label for="thymeQty">Quantity:</label>
+        <input type="number" id="thymeQty" name="thymeQty" value="1" min="1" max="100">
+      </div>
+      <button class="food-produce_button" data-item="Thyme" data-price="200" onclick="addToCart('thyme')">Add to Cart</button>    </div>
+  
+    <div class="garlic">
+      <img class="garlic-picture" src="Pictures/garlic.png" alt="" />
+      <p>Garlic</p>
+      <p class="price"> 1 bag for &#36 200</p>
+      <div class="quan">
+        <label for="garlicQty">Quantity:</label>
+        <input type="number" id="garlicQty" name="garlicQty" value="1" min="1" max="100">
+      </div>
+      <button class="food-produce_button" data-item="Garlic" data-price="200" onclick="addToCart('garlic')">Add to Cart</button>    </div>
+  </div>
+
+  <div class="vegetables">  
+      <h1>Vegetable</h1>
+  
+      <div class="callaloo">
+        <img class="callaloo-picture" src="Pictures/callaloo.png" alt="" />
+        <p>Callaloo</p>
+        <p class="price"> 1 bundle for &#36 100 
+          <br/>
+          cut up is for &#36 200</p>
+          <div class="quan">
+            <label for="callalooQty">Quantity:</label>
+            <input type="number" id="callalooQty" name="callalooQty" value="1" min="1" max="100">
+          </div>
+          <button class="food-produce_button" data-item="Callaloo" data-price="200" onclick="addToCart('callaloo')">Add to Cart</button>      </div>    
+  
+      <div class="pak-choi">
+        <img class="pak-choi-picture" src="Pictures/pak choi.png" alt="" />
+        <p>Pak-choi</p>
+        <p class="price"> 1 pound for &#36 150</p>
+        <div class="quan">
+          <label for="pakchoiQty">Quantity:</label>
+          <input type="number" id="pakchoiQty" name="pakchoiQty" value="1" min="1" max="100">
+        </div>
+        <button class="food-produce_button" data-item="Pak Choi" data-price="200" onclick="addToCart('pak-choi')">Add to Cart</button>      </div>
+    </div>
+
+    <div class="meats">
+      <h1>Meats</h1>
+  
+      <div class="chicken">
+        <img class="chicken-picture" src="Pictures/chicken.png" alt="" />
+        <p>Chicken</p>
+        <p class="price"> 1 pound for &#36 350</p>
+        <div class="quan">
+          <label for="chickenQty">Quantity:</label>
+          <input type="number" id="chickenQty" name="chickenQty" value="1" min="1" max="100">
+        </div>
+        <button class="food-produce_button" data-item="Chicken" data-price="200" onclick="addToCart('chicken')">Add to Cart</button>      </div>     
+  
+      <div class="pork">
+        <img class="pork-picture" src="Pictures/pork.png" alt="" />
+        <p>Pork</p>
+        <p class="price">  &#36 450 for 1 pound of pork <br/> for special cuts it is 450 a pound</p>
+        <div class="quan">
+          <label for="porkQty">Quantity:</label>
+          <input type="number" id="porkQty" name="porkQty" value="1" min="1" max="100">
+        </div>
+        <button class="food-produce_button" data-item="Pork" data-price="200" onclick="addToCart('pork')">Add to Cart</button>      </div> 
+    </div>
+
+
+    </header>
+
+    <div class="cart" id="cart">
+      <h1>Shopping Cart</h1>
+      <ul class="cart-items" id="cartItems">
+        <div class="quantity"></div>
+      </ul>
+      <div class="checkout">
+        <div class="total" id="cartTotal">$0.00</div>
+        <div class="close" id="closeCart">Close</div>
+      </div>
+      <form id="checkoutForm">
+        <label for="name">Name:</label>
+        <input type="name" id="name" required aria-label="Your Name">
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" required aria-label="Your Email">
+        <label for="number">Contact Number:</label>
+        <input type="character" id="number" required aria-label="Your Phone Number">
+        <label for="address">Street Address:</label>
+        <input type="address" id="address" required aria-label="Your Street Address">
+        <button  type="submit">Checkout</button>
+      </form>
+    </div>
+    
+    
+    
+
+    <footer id="footer">
+      <div class="footer-left">
+        <h3>Contact Us</h3>
+        <form id="contactForm">
+          <input type="text" id="Name" placeholder="Your Name" required aria-label="Your Name" />
+          <input type="email" id="email" placeholder="Your Email" required aria-label="Your Email" />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button id="submit" type="submit">Send Message</button>
+        </form>
+        
+        <div class="social-icons">
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook Profile"> Facebook
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter Profile"> Twitter
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram Profile">Instagram
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <img src="Pictures/KPB_KPB V1.png" alt="Logo " />
+      </div>
+      <p class="copyrite">&copy; 2023 KPB Farms. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="email.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
+
