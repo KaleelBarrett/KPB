@@ -1,0 +1,95 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color and font for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.text-overlay-about {
+  position: relative;
+  padding: 40px;
+  margin: 40px 0;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.text-overlay-about p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Style the footer */
+#footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap the footer content */
+}
+
+/* Left side of the footer (contact form) */
+.footer-left {
+  flex: 1;
+}
+
+/* Contact form styles */
+.footer-left h3 {
+  margin-bottom: 10px;
+}
+
+.footer-left form input,
+.footer-left form textarea,
+.footer-left form button {
+  display: block;
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer-left form button {
+  background-color: #525fe1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-left form button:hover {
+  background-color: #3c48c5;
+}
+
+/* Social icons */
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Copyright notice */
+.copyrite {
+  margin-top: 20px;
+  flex-basis: 100%; /* Make the element take full width of the container */
+  text-align: center; /* Center the text */
+}
+
+/* Right side of the footer (logo) */
+.footer-right {
+  flex: 1;
+  text-align: right;
+  margin-right: 10%;
+}
+
+.footer-right img {
+  max-width: 200px;
+}
