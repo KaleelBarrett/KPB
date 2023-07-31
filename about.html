@@ -22,16 +22,51 @@
             <li><a href="about.html">About</a></li>
             <li><a href="order.html">Order</a></li>
             <li><a href="#footer">Contact</a></li>
-            <li class="cart-icon">
-              <img
-                src="Pictures/shopping-cart-outline-svgrepo-com.svg"
-                alt="Cart"
-              />
+            <li>
+              <div class="cart-icon" id="cartIcon">
+                <img
+                  src="Pictures/shopping-cart-outline-svgrepo-com.svg"
+                  alt="Cart"
+                />
+                <div class="quantity" id="cartQuantity">0</div>
+              </div>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+
+    <div class="cart" id="cart">
+      <h1>Shopping Cart</h1>
+      <ul class="cart-items" id="cartItems">
+        <div class="quantity"></div>
+      </ul>
+      <div class="checkout">
+        <div class="total" id="cartTotal">$0.00</div>
+        <div class="close" id="closeCart">Close</div>
+      </div>
+      <form id="checkoutForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required aria-label="Your Name" />
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" required aria-label="Your Email" />
+        <label for="number">Contact Number:</label>
+        <input
+          type="character"
+          id="number"
+          required
+          aria-label="Your Phone Number"
+        />
+        <label for="address">Street Address:</label>
+        <input
+          type="address"
+          id="address"
+          required
+          aria-label="Your Street Address"
+        />
+        <button type="submit">Checkout</button>
+      </form>
+    </div>
 
     <div class="text-overlay-about">
       <p>
@@ -86,7 +121,7 @@
         <form id="contactForm">
           <input
             type="text"
-            id="name"
+            id="Name"
             placeholder="Your Name"
             required
             aria-label="Your Name"
@@ -137,5 +172,6 @@
     </footer>
     <script src="script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="email.js"></script>
   </body>
 </html>
