@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html,
 body {
   margin: 0;
@@ -426,3 +427,433 @@ nav ul li a:hover {
 .footer-right img {
   max-width: 200px;
 }
+=======
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Fallback font for better cross-browser support */
+}
+
+.fullscreen-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #f6f1f1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 0;
+}
+
+header {
+  background-color: #afd3e2;
+  height: 100px;
+  width: 100%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 10%;
+  height: 10%;
+  margin-left: 100px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 100px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 20px 30px;
+}
+
+nav ul li a {
+  color: #fff6f4;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #525fe1;
+}
+
+#home {
+  padding: 50px;
+  background-color: #19a7ce; /* Change the background color */
+  color: white; /* Change the text color */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: 5% auto;
+  text-align: center;
+  display: flex; /* Add this to make the content inside .home div flex */
+  flex-direction: column; /* Align content vertically in the center */
+  align-items: center; /* Align content horizontally in the center */
+}
+
+#home h1 {
+  margin-bottom: 20px; /* Add some spacing below the heading */
+}
+
+.images-container {
+  display: flex;
+  gap: 20px; /* Add spacing between images */
+  margin-top: 30px; /* Add some spacing between text and images */
+}
+
+.images-container img {
+  width: 100px; /* Adjust the image size */
+  height: 100px;
+  border-radius: 50%; /* Make the images circular */
+}
+
+#home p {
+  margin-top: 20px; /* Add spacing between heading and paragraph */
+}
+
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon img {
+  width: 30px;
+}
+
+.quantity {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff4d4d;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: #f6f1f1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.cart.open {
+  right: 0;
+}
+
+/* ... (existing CSS rules) ... */
+
+.cart h1 {
+  margin: 0;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-items li {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.close {
+  cursor: pointer;
+}
+
+/* Form styles */
+#checkoutForm {
+  margin-top: 10px;
+  padding: 1rem; /* Add some padding to the form */
+  background-color: #f0f0f0; /* Set background color for the form */
+}
+
+#checkoutForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#emailInput,
+#name,
+#number,
+#address {
+  display: block;
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#checkoutForm button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#checkoutForm button:hover {
+  background-color: #e3f4f4;
+}
+
+/* Style the parent container */
+#about {
+  display: flex;
+  padding: 50px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+/* Style the right side div */
+.rightside {
+  background-color: black;
+  color: white;
+  padding: 90px;
+  flex: 1; /* Take up available space horizontally */
+}
+
+/* Style the left side div */
+.leftside {
+  background-color: #146c94;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align items horizontally in the center */
+  justify-content: center; /* Align items vertically in the center */
+  flex: 1;
+  gap: 40px; /* Add spacing between items */
+}
+
+/* Style the images in the left side div */
+.leftside img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  align-content: space-between;
+}
+
+/* Style the text under each image on the left side */
+.leftside p {
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+/* Style the container for the featured products section */
+#order {
+  padding: 50px;
+  background-color: #19a7ce;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+/* Style the heading for the featured products section */
+#order h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style the wrapping container for the product containers */
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Style each product container */
+.product-container .cont1,
+.product-container .cont2,
+.product-container .cont3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Style the product images */
+.product-container img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Style the "add to cart" buttons */
+.product-container button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #525fe1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Change the button color on hover */
+.product-container button:hover {
+  background-color: #3c48c5;
+}
+
+/* Style the "More Products" button */
+.more-products-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #525fe1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Change the "More Products" button color on hover */
+.more-products-btn:hover {
+  background-color: #3c48c5;
+}
+
+/* Clear floating elements and force button below container */
+.product-container {
+  overflow: hidden;
+}
+
+.quan label {
+  margin-right: 10px;
+}
+
+/* Style for the quantity input */
+.quan input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Optional: Add some basic button styles for consistency */
+.quan button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.quan button:hover {
+  background-color: #45a049;
+}
+
+/* Footer styles */
+#footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap the footer content */
+}
+
+/* Left side of the footer (contact form) */
+.footer-left {
+  flex: 1;
+}
+
+/* Contact form styles */
+.footer-left h3 {
+  margin-bottom: 10px;
+}
+
+.footer-left form input,
+.footer-left form textarea,
+.footer-left form button {
+  display: block;
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer-left form button {
+  background-color: #525fe1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-left form button:hover {
+  background-color: #3c48c5;
+}
+
+/* Social icons */
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Copyright notice */
+.copyrite {
+  margin-top: 20px;
+  flex-basis: 100%; /* Make the element take full width of the container */
+  text-align: center; /* Center the text */
+}
+
+/* Right side of the footer (logo) */
+.footer-right {
+  flex: 1;
+  text-align: right;
+  margin-right: 10%;
+}
+
+.footer-right img {
+  max-width: 200px;
+}
+>>>>>>> b3f81b3d86c086eb917cf930daccb7cce499712c
