@@ -16,7 +16,7 @@ contactForm.addEventListener("submit", function (e) {
   }
 
   let ebody = `
-  <b>Name:</b> ${name}
+  <b>Name:</b> ${Name}
   <br>
   <b>Email:</b> ${email}
   <br>
