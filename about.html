@@ -11,6 +11,100 @@
     ></script>
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Styles for screens with a minmum width of 1200 pixels or more */
+      @media screen and (min-width: 1200px) {
+        body {
+          font-size: 20px;
+        }
+        .logo {
+          width: 120px;
+          height: 110px;
+          margin-left: 100px;
+        }
+
+        nav ul li a {
+          font-size: 24px;
+        }
+
+        .cart {
+          right: -900px;
+          width: 600px;
+        }
+      }
+
+      /* Styles for screens with a minmum width of 768 pixels or more */
+      @media screen and (min-width: 768px) {
+        nav ul li a {
+          font-size: 14px;
+        }
+
+        .logo {
+          width: 100px;
+          height: 100px;
+          margin-left: 50px;
+        }
+      }
+
+      /* Styles for screens with a maximum width of 600 pixels or less */
+      @media screen and (max-width: 600px) {
+        body {
+          font-size: 12px;
+        }
+
+        header {
+          background-color: #afd3e2;
+          height: 120px;
+        }
+
+        .logo {
+          width: 75px;
+          height: 75px;
+          align-self: center;
+          margin-bottom: -5px;
+          margin-left: 40px;
+        }
+
+        nav {
+          justify-content: none;
+          margin-right: 0px;
+          top: 0;
+        }
+
+        nav ul li {
+          display: list-item;
+          margin: 5px 30px;
+          margin-top: 0px;
+        }
+        nav ul li a {
+          font-size: 8px;
+        }
+
+        .cart-icon img {
+          width: 20px;
+        }
+
+        .quantity {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+        }
+
+        #about {
+          display: inline-block;
+        }
+
+        #about,
+        #order,
+        #home {
+          padding: 40px;
+        }
+
+        .footer-right img {
+          max-width: 100px;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -24,10 +118,7 @@
             <li><a href="#footer">Contact</a></li>
             <li>
               <div class="cart-icon" id="cartIcon">
-                <img
-                  src="Pictures/shopping-cart-outline-svgrepo-com.svg"
-                  alt="Cart"
-                />
+                <img src="Pictures/trolley.png" alt="Cart" />
                 <div class="quantity" id="cartQuantity">0</div>
               </div>
             </li>

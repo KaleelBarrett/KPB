@@ -6,7 +6,7 @@ body {
 }
 
 body {
-  font-family: Arial, sans-serif; /* Fallback font for better cross-browser support */
+  font-family: Arial, sans-serif;
 }
 
 .fullscreen-image {
@@ -128,8 +128,6 @@ nav ul li a:hover {
 .cart.open {
   right: 0;
 }
-
-/* ... (existing CSS rules) ... */
 
 .cart h1 {
   margin: 0;
