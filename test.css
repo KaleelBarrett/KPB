@@ -156,8 +156,6 @@ nav ul li a:hover {
   background-color: #e3f4f4;
 }
 
-/* ... (existing CSS rules) ... */
-
 .green-banana,
 .plantain,
 .ripe-banana {
@@ -172,7 +170,10 @@ nav ul li a:hover {
 .pumpkin,
 .irish,
 .okra,
-.cucumber {
+.cucumber,
+.coco,
+.casava,
+.dasheen {
   width: 200px;
   margin-top: 100 px;
   display: inline-block;
@@ -197,7 +198,9 @@ nav ul li a:hover {
 .thyme,
 .esc,
 .garlic,
-.pork {
+.pork,
+.egg,
+.red_telapia {
   width: 200px;
   margin-top: 100 px;
   display: inline-block;
@@ -234,7 +237,12 @@ nav ul li a:hover {
 .ripe-banana-picture,
 .melon-picture,
 .papaya-picture,
-.canteloupe-picture {
+.canteloupe-picture,
+.red_telapia-picture,
+.casava-picture,
+.coco-picture,
+.egg-picture,
+.dasheen-picture {
   width: 200px;
   height: 200 px;
 }
@@ -356,9 +364,8 @@ nav ul li a:hover {
   max-width: 200px;
 }
 
-/* Add this CSS at the end of your test.css file */
 footer {
-  position: absolute;
-  margin-top: 200%;
+  position: relative;
+  margin-top: 300%;
   width: 100%;
 }

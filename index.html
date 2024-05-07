@@ -11,102 +11,349 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
     <style>
-    /* Styles for screens with a minmum width of 1200 pixels or more */
-    @media screen and (min-width: 1200px) {
+    /* Styles for screens with a minimum width of 1200 pixels or more */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+  .logo {
+    width: 120px;
+    height: 110px;
+    margin-left: 100px;
+  }
+  nav ul li a {
+    font-size: 24px;
+  }
+  .cart {
+    right: -900px;
+    width: 600px;
+  }
+}
 
-      body {
-      font-size: 20px ;
-      }
-      .logo {
-        width: 120px;
-        height: 110px;
-        margin-left: 100px;
-      }
+/* Styles for screens with a minimum width of 768 pixels or more */
+@media screen and (min-width: 768px) {
+  nav ul li a {
+    font-size: 12px;
+  }
+  .logo {
+    width: auto;
+    height: 100px;
+    margin-left: 50px;
+  }
+}
 
-      nav ul li a {
-        font-size: 24px;
-      }
+/* Styles for screens with a maximum width of 600 pixels or less */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  header {
+    background-color: #afd3e2;
+    height: 120px;
+  }
+  .logo {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto; /* Center the logo horizontally */
+    display: block; /* Ensure it takes up its own line */
+  }
+  nav {
+    justify-content: center; /* Center the navigation items horizontally */
+    margin: 0 auto; /* Center the navigation horizontally */
+  }
+  nav ul {
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove bullet points */
+  }
+  nav ul li {
+    display: inline-block; /* Display navigation items in a line */
+    margin: 0 10px; /* Add spacing between navigation items */
+  }
+  nav ul li a {
+    font-size: 12px; /* Adjust font size of navigation links */
+  }
 
-      .cart {
-        right: -900px;
-        width: 600px;
-      }
-    } 
-
-    /* Styles for screens with a minmum width of 768 pixels or more */
-    @media screen and (min-width: 768px) {
-      nav ul li a {
-        font-size: 14px;
-      }
-
-      .logo {
-        width: 100px;
-        height: 100px;
-        margin-left: 50px;
-      }
-    }
-
-    /* Styles for screens with a maximum width of 600 pixels or less */
-    @media screen and (max-width: 600px) {
-      body {
-      font-size: 12px;
-      }
-
-      header {
-        background-color: #afd3e2;
-        height: 120px;
-      }
-
-      .logo {
-        width: 75px;
-        height: 75px;
-        align-self: center;
-        margin-bottom: 30px;
-        margin-left: 30px;
-      }
-
-      nav {
-        justify-content: none;
-        margin-right: 0px;
-        top: 0;
-      }
-      
-      nav ul li {
-        display: list-item;
-        margin: 5px 30px;
-        margin-top: 0px;
-      }
-      nav ul li a {
-        font-size: 8px;
-      }
+  .cart {
+  width: auto; /* Set width to auto */
+  max-width: 600px; /* Optionally, set a maximum width */
+  margin: 0 auto; /* Center the cart horizontally */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #fff; /* Add a background color */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
 
 
+  .cart-icon img {
+    width: 20px;
+  }
+  .quantity {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
 
-      .cart-icon img {
-        width: 20px;
-      }
+  #home {
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #19a7ce; /* Change the background color */
+  color: white; /* Change the text color */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: 5% auto;
+  text-align: center;
+  display: flex; /* Add this to make the content inside .home div flex */
+  flex-direction: column; /* Align content vertically in the center */
+  align-items: center; /* Align content horizontally in the center */
+}
 
-      .quantity {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-      }
+#home h1 {
+  margin-bottom: 20px; /* Add some spacing below the heading */
+}
 
-      #about {
-        display: inline-block;
-      }
+.images-container {
+  display: flex;
+  gap: 20px; /* Add spacing between images */
+  margin-top: 30px; /* Add some spacing between text and images */
+}
 
-      #about, #order, #home {
-        padding: 40px;
-      }
-    
+.images-container img {
+  width: 50px; /* Adjust the image size */
+  height: 50px;
+  border-radius: 50%; /* Make the images circular */
+}
 
-      .footer-right img {
-        max-width: 100px;
-      }
-    }
-    </style>
+#home p {
+  margin-top: 20px; /* Add spacing between heading and paragraph */
+}
+
+
+  /* Adjust padding and font size for the "about" section */
+  #about {
+    padding: 20px; /* Adjust padding as needed */
+    font-size: 12px; /* Adjust font size as needed */
+    width: auto;
+  }
+  /* Center the "about" section */
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* Style the right side div */
+  .rightside {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100%; /* Ensure it takes full width */
+    margin-bottom: 10px; /* Add some space between sections */
+  }
+  /* Style the left side div */
+  .leftside {
+    background-color: #146c94;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    width: 100%; /* Ensure it takes full width */
+  }
+  /* Style the images in the left side div */
+  .leftside img {
+    width: 50px; /* Adjust image size as needed */
+    height: 50px;
+    margin-bottom: 5px; /* Add spacing between images */
+  }
+  /* Style the text under each image on the left side */
+  .leftside p {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 10px; /* Adjust font size as needed */
+  }
+  .footer-right img {
+    max-width: 50px; /* Adjust image size as needed */
+  }
+
+  /* Style for the "#order" section */
+#order {
+  padding: 20px; /* Adjust padding as needed */
+}
+
+#order h1 {
+  font-size: 24px; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Add some spacing below the heading */
+}
+
+/* Style the wrapping container for the product containers */
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Style each product container */
+.product-container .cont1,
+.product-container .cont2,
+.product-container .cont3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Style the product images */
+.product-container img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Style the "add to cart" buttons */
+.product-container button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #525fe1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Change the button color on hover */
+.product-container button:hover {
+  background-color: #3c48c5;
+}
+
+/* Style the "More Products" button */
+.more-products-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #525fe1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Change the "More Products" button color on hover */
+.more-products-btn:hover {
+  background-color: #3c48c5;
+}
+
+/* Clear floating elements and force button below container */
+.product-container {
+  overflow: hidden;
+}
+
+.quan label {
+  margin-right: 10px;
+}
+
+/* Style for the quantity input */
+.quan input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Optional: Add some basic button styles for consistency */
+.quan button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.quan button:hover {
+  background-color: #45a049;
+}
+
+/* Footer styles */
+#footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap the footer content */
+}
+
+/* Left side of the footer (contact form) */
+.footer-left {
+  flex: 1;
+}
+
+/* Contact form styles */
+.footer-left h3 {
+  margin-bottom: 10px;
+}
+
+.footer-left form input,
+.footer-left form textarea,
+.footer-left form button {
+  display: block;
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer-left form button {
+  background-color: #525fe1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-left form button:hover {
+  background-color: #3c48c5;
+}
+
+/* Social icons */
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Copyright notice */
+.copyrite {
+  margin-top: 20px;
+  flex-basis: 100%; /* Make the element take full width of the container */
+  text-align: center; /* Center the text */
+}
+
+/* Right side of the footer (logo) */
+.footer-right {
+  flex: 1;
+  text-align: right;
+  margin-right: 10%;
+}
+
+.footer-right img {
+  max-width: 200px; /* Adjust image size as needed */
+}
+
+
+}  
+</style>
   </head>
+
   <body>
     <div class="fullscreen-image">
       <header>
@@ -129,6 +376,7 @@
           </nav>
         </div>
       </header>
+
       <div class="cart" id="cart">
         <h1>Shopping Cart</h1>
         <ul class="cart-items" id="cartItems">
@@ -138,7 +386,7 @@
           <div class="total" id="cartTotal">$0.00</div>
           <div class="close" id="closeCart">Close</div>
         </div>
-        <form id="checkoutForm">
+        <form id="checkoutForm" class="hidden">
           <label for="name">Name:</label>
           <input type="text" id="name" required aria-label="Your Name">
           <label for="emailInput">Email:</label>
@@ -232,7 +480,7 @@
 
 
 
-<footer id="footer">
+<footer>
   <div class="footer-left">
     <h3>Contact Us</h3>
     <form id="contactForm">

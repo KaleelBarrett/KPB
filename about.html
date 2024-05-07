@@ -49,60 +49,53 @@
       /* Styles for screens with a maximum width of 600 pixels or less */
       @media screen and (max-width: 600px) {
         body {
-          font-size: 12px;
-        }
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  header {
+    background-color: #afd3e2;
+    height: 120px;
+  }
+  .logo {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto; /* Center the logo horizontally */
+    display: block; /* Ensure it takes up its own line */
+  }
+  nav {
+    justify-content: center; /* Center the navigation items horizontally */
+    margin: 0 auto; /* Center the navigation horizontally */
+  }
+  nav ul {
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove bullet points */
+  }
+  nav ul li {
+    display: inline-block; /* Display navigation items in a line */
+    margin: 0 10px; /* Add spacing between navigation items */
+  }
+  nav ul li a {
+    font-size: 12px; /* Adjust font size of navigation links */
+  }
+  
+  .cart {
+  width: auto; /* Set width to auto */
+  max-width: 600px; /* Optionally, set a maximum width */
+  margin: 0 auto; /* Center the cart horizontally */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #fff; /* Add a background color */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
 
-        header {
-          background-color: #afd3e2;
-          height: 120px;
-        }
 
-        .logo {
-          width: 75px;
-          height: 75px;
-          align-self: center;
-          margin-bottom: -5px;
-          margin-left: 40px;
-        }
-
-        nav {
-          justify-content: none;
-          margin-right: 0px;
-          top: 0;
-        }
-
-        nav ul li {
-          display: list-item;
-          margin: 5px 30px;
-          margin-top: 0px;
-        }
-        nav ul li a {
-          font-size: 8px;
-        }
-
-        .cart-icon img {
-          width: 20px;
-        }
-
-        .quantity {
-          width: 10px;
-          height: 10px;
-          border-radius: 50%;
-        }
-
-        #about {
-          display: inline-block;
-        }
-
-        #about,
-        #order,
-        #home {
-          padding: 40px;
-        }
-
-        .footer-right img {
-          max-width: 100px;
-        }
+  .cart-icon img {
+    width: 20px;
+  }
+  .quantity {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
       }
     </style>
   </head>
